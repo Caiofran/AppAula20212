@@ -16,5 +16,15 @@ namespace View
         {
             InitializeComponent();
         }
+
+        private void btnok_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você apertou no botão ok");
+        }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
