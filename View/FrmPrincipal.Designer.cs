@@ -1,7 +1,7 @@
 ﻿
 namespace View
 {
-    partial class Form1
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
