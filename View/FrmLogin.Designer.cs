@@ -43,7 +43,7 @@ namespace View
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.Size = new System.Drawing.Size(171, 20);
             this.txbUsuario.TabIndex = 0;
-            this.txbUsuario.Text = "thiago";
+            this.txbUsuario.Text = "caio";
             this.txbUsuario.TextChanged += new System.EventHandler(this.txbUsuario_TextChanged);
             // 
             // txbSenha
@@ -53,7 +53,7 @@ namespace View
             this.txbSenha.PasswordChar = '*';
             this.txbSenha.Size = new System.Drawing.Size(171, 20);
             this.txbSenha.TabIndex = 1;
-            this.txbSenha.Text = "thiago";
+            this.txbSenha.Text = "caio";
             this.txbSenha.TextChanged += new System.EventHandler(this.txbSenha_TextChanged);
             // 
             // label1
