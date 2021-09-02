@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
 
 namespace View
 {
@@ -14,41 +15,24 @@ namespace View
     {
         public FrmPrincipal()
         {
-            FrmLogin form = new FrmLogin();
-            this.Visible = false;
-            form.ShowDialog();
-            this.Visible = true;
-
             InitializeComponent();
         }
 
-        private void btnok_Click(object sender, EventArgs e)
+        private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show("Você apertou no botão ok");
-            FrmCadPessoa form = new FrmCadPessoa();
+            FrmLogin formLogin = new FrmLogin();
+            this.Hide();
 
-            //this.Visible = false;
-
-            //form.Show();
-            form.ShowDialog();
-
-            //this.Visible = true;
-
-            //MessageBox.Show("passou!!");
+            if (formLogin.ShowDialog() == DialogResult.OK)
+            {
+                User u = (User)formLogin.Tag;
+                itbUsuarioLogado.Text = u.Usuario;
+                this.Show();
+            }
+            else
+            {
+                this.Close();
+            }
         }
-
-        /*private void MensagemNaTela(object sender, EventArgs e)
-        {
-            int a = 2;
-            int b = 3;
-            int res = a + b;
-            MessageBox.Show("Resutado " + res);
-        }*/
-
-        private void btncancel_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
