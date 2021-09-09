@@ -36,7 +36,14 @@ namespace View
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.itbHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.tHora = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.imArquivo = new System.Windows.Forms.ToolStripMenuItem();
+            this.imAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.imSalvar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.imSair = new System.Windows.Forms.ToolStripMenuItem();
             this.barraStatus.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // barraStatus
@@ -84,13 +91,63 @@ namespace View
             this.tHora.Interval = 1000;
             this.tHora.Tick += new System.EventHandler(this.tHora_Tick);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.imArquivo});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(841, 28);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // imArquivo
+            // 
+            this.imArquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.imAbrir,
+            this.imSalvar,
+            this.toolStripSeparator1,
+            this.imSair});
+            this.imArquivo.Name = "imArquivo";
+            this.imArquivo.Size = new System.Drawing.Size(75, 24);
+            this.imArquivo.Text = "&Arquivo";
+            // 
+            // imAbrir
+            // 
+            this.imAbrir.Name = "imAbrir";
+            this.imAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.imAbrir.Size = new System.Drawing.Size(224, 26);
+            this.imAbrir.Text = "Abrir";
+            // 
+            // imSalvar
+            // 
+            this.imSalvar.Name = "imSalvar";
+            this.imSalvar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.imSalvar.Size = new System.Drawing.Size(224, 26);
+            this.imSalvar.Text = "Salvar";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            // 
+            // imSair
+            // 
+            this.imSair.Name = "imSair";
+            this.imSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
+            this.imSair.Size = new System.Drawing.Size(224, 26);
+            this.imSair.Text = "Sair";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 457);
             this.Controls.Add(this.barraStatus);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "FrmPrincipal";
@@ -99,6 +156,8 @@ namespace View
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.barraStatus.ResumeLayout(false);
             this.barraStatus.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,6 +171,12 @@ namespace View
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel itbHora;
         private System.Windows.Forms.Timer tHora;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem imArquivo;
+        private System.Windows.Forms.ToolStripMenuItem imAbrir;
+        private System.Windows.Forms.ToolStripMenuItem imSalvar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem imSair;
     }
 }
 
