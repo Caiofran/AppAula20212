@@ -34,5 +34,10 @@ namespace View
                 this.Close();
             }
         }
+
+        private void tHora_Tick(object sender, EventArgs e)
+        {
+            itbHora.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }
