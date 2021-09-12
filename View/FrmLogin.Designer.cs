@@ -39,51 +39,46 @@ namespace View
             // 
             // txbUsuario
             // 
-            this.txbUsuario.Location = new System.Drawing.Point(103, 48);
-            this.txbUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbUsuario.Location = new System.Drawing.Point(77, 39);
             this.txbUsuario.Name = "txbUsuario";
-            this.txbUsuario.Size = new System.Drawing.Size(227, 22);
+            this.txbUsuario.Size = new System.Drawing.Size(171, 20);
             this.txbUsuario.TabIndex = 0;
-            this.txbUsuario.Text = "caio";
+            this.txbUsuario.Text = "thiago";
             this.txbUsuario.TextChanged += new System.EventHandler(this.txbUsuario_TextChanged);
             // 
             // txbSenha
             // 
-            this.txbSenha.Location = new System.Drawing.Point(103, 98);
-            this.txbSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSenha.Location = new System.Drawing.Point(77, 80);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.PasswordChar = '*';
-            this.txbSenha.Size = new System.Drawing.Size(227, 22);
+            this.txbSenha.Size = new System.Drawing.Size(171, 20);
             this.txbSenha.TabIndex = 1;
-            this.txbSenha.Text = "caio";
+            this.txbSenha.Text = "thiago";
             this.txbSenha.TextChanged += new System.EventHandler(this.txbSenha_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(25, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 17);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Usuário:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 102);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(25, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Senha:";
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(252, 145);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Location = new System.Drawing.Point(189, 118);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(79, 28);
+            this.btnLogin.Size = new System.Drawing.Size(59, 23);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -93,19 +88,18 @@ namespace View
             // 
             this.lblMsg.AutoSize = true;
             this.lblMsg.ForeColor = System.Drawing.Color.Red;
-            this.lblMsg.Location = new System.Drawing.Point(99, 208);
-            this.lblMsg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMsg.Location = new System.Drawing.Point(74, 169);
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(188, 17);
+            this.lblMsg.Size = new System.Drawing.Size(143, 13);
             this.lblMsg.TabIndex = 5;
             this.lblMsg.Text = "Usuário ou senha inválidos!!!";
             this.lblMsg.Visible = false;
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 235);
+            this.ClientSize = new System.Drawing.Size(286, 191);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);
@@ -113,7 +107,6 @@ namespace View
             this.Controls.Add(this.txbSenha);
             this.Controls.Add(this.txbUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Efetuar Login";
