@@ -24,6 +24,8 @@ namespace View
             user.Usuario = txbUsuario.Text;
             user.Senha = txbSenha.Text;
 
+            user.
+
             if (ValidarLogin(user))
             {
                 this.DialogResult = DialogResult.OK;
@@ -44,7 +46,7 @@ namespace View
 
             try
             {
-                if (_user.Usuario.Equals("caio") && _user.Senha.Equals("caio"))
+                if (_user.Usuario.Equals("thiago") && _user.Senha.Equals("thiago"))
                 {
                     resultado = true;
                 }
