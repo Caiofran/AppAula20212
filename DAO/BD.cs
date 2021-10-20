@@ -11,8 +11,34 @@ namespace DAO
     public static class BD
     {
         //Data Source=D:\Documentos\Faculdade 2021.2\Metodologia e Construção de Projetos de TI\Projetos\AppAula20212\bd.sdf;Password=123
+        private static String strConn = @"Data Source=D:\Documentos\Faculdade 2021.2\Metodologia e Construção de Projetos de TI\Projetos\AppAula20212\bd.sdf;Password=123";
+        private static SqlCeConnection conexao;
+
         public static void AbrirConexao()
-        { }
+        {
+            try
+            {
+                if(conexao != null)
+                {
+                    if(conexao.State == ConnectionState.Closed)
+                    {
+                        conexao.ConnectionString = strConn;
+                        conexao.Open();
+                    }
+                }
+
+                else
+                {
+                    conexao = new SqlCeConnection(strConn);
+                    conexao.Open();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Erro ao Abrir a conexao: " + ex.Message);
+            }
+        }
 
         public static void FecharConexao()
         { }
