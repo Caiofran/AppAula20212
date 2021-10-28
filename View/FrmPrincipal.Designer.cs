@@ -30,7 +30,6 @@ namespace View
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.barraStatus = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.itbUsuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
@@ -46,8 +45,8 @@ namespace View
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barraTarefas = new System.Windows.Forms.ToolStrip();
             this.brBtnCadastrar = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.brBtnListarPessoas = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.barraStatus.SuspendLayout();
             this.menuPrincipal.SuspendLayout();
             this.barraTarefas.SuspendLayout();
@@ -56,39 +55,41 @@ namespace View
             // 
             // barraStatus
             // 
+            this.barraStatus.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.barraStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.itbUsuarioLogado,
             this.toolStripStatusLabel2,
             this.itbHora});
-            this.barraStatus.Location = new System.Drawing.Point(0, 505);
+            this.barraStatus.Location = new System.Drawing.Point(0, 623);
             this.barraStatus.Name = "barraStatus";
-            this.barraStatus.Size = new System.Drawing.Size(1060, 22);
+            this.barraStatus.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.barraStatus.Size = new System.Drawing.Size(1413, 26);
             this.barraStatus.TabIndex = 0;
             this.barraStatus.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(96, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(121, 20);
             this.toolStripStatusLabel1.Text = "Usuário Logado: ";
             // 
             // itbUsuarioLogado
             // 
             this.itbUsuarioLogado.Name = "itbUsuarioLogado";
-            this.itbUsuarioLogado.Size = new System.Drawing.Size(86, 17);
+            this.itbUsuarioLogado.Size = new System.Drawing.Size(108, 20);
             this.itbUsuarioLogado.Text = "usuarioLogado";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(10, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(13, 20);
             this.toolStripStatusLabel2.Text = "|";
             // 
             // itbHora
             // 
             this.itbHora.Name = "itbHora";
-            this.itbHora.Size = new System.Drawing.Size(49, 17);
+            this.itbHora.Size = new System.Drawing.Size(63, 20);
             this.itbHora.Text = "00:00:00";
             // 
             // tHora
@@ -99,12 +100,13 @@ namespace View
             // 
             // menuPrincipal
             // 
+            this.menuPrincipal.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.imArquivo,
             this.ajudaToolStripMenuItem});
             this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuPrincipal.Name = "menuPrincipal";
-            this.menuPrincipal.Size = new System.Drawing.Size(1060, 24);
+            this.menuPrincipal.Size = new System.Drawing.Size(1413, 30);
             this.menuPrincipal.TabIndex = 1;
             this.menuPrincipal.Text = "menuStrip1";
             // 
@@ -116,40 +118,40 @@ namespace View
             this.toolStripSeparator1,
             this.imSair});
             this.imArquivo.Name = "imArquivo";
-            this.imArquivo.Size = new System.Drawing.Size(61, 20);
+            this.imArquivo.Size = new System.Drawing.Size(75, 26);
             this.imArquivo.Text = "A&rquivo";
             // 
             // imAbrir
             // 
             this.imAbrir.Name = "imAbrir";
             this.imAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.imAbrir.Size = new System.Drawing.Size(180, 22);
+            this.imAbrir.Size = new System.Drawing.Size(182, 26);
             this.imAbrir.Text = "Abrir";
             // 
             // imSalvar
             // 
             this.imSalvar.Name = "imSalvar";
             this.imSalvar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.imSalvar.Size = new System.Drawing.Size(180, 22);
+            this.imSalvar.Size = new System.Drawing.Size(182, 26);
             this.imSalvar.Text = "Salvar";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(179, 6);
             // 
             // imSair
             // 
             this.imSair.Name = "imSair";
             this.imSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.imSair.Size = new System.Drawing.Size(180, 22);
+            this.imSair.Size = new System.Drawing.Size(182, 26);
             this.imSair.Text = "Sair";
             this.imSair.Click += new System.EventHandler(this.imSair_Click);
             // 
             // ajudaToolStripMenuItem
             // 
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(62, 26);
             this.ajudaToolStripMenuItem.Text = "&Ajuda";
             // 
             // barraTarefas
@@ -159,9 +161,9 @@ namespace View
             this.barraTarefas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.brBtnCadastrar,
             this.brBtnListarPessoas});
-            this.barraTarefas.Location = new System.Drawing.Point(0, 24);
+            this.barraTarefas.Location = new System.Drawing.Point(0, 30);
             this.barraTarefas.Name = "barraTarefas";
-            this.barraTarefas.Size = new System.Drawing.Size(45, 481);
+            this.barraTarefas.Size = new System.Drawing.Size(45, 593);
             this.barraTarefas.TabIndex = 2;
             this.barraTarefas.Text = "toolStrip1";
             // 
@@ -175,37 +177,39 @@ namespace View
             this.brBtnCadastrar.Text = "Adicionar novo usuário!";
             this.brBtnCadastrar.Click += new System.EventHandler(this.brBtnCadastrar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::View.Properties.Resources.logo2_lasallerj;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1015, 481);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // brBtnListarPessoas
             // 
             this.brBtnListarPessoas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.brBtnListarPessoas.Image = ((System.Drawing.Image)(resources.GetObject("brBtnListarPessoas.Image")));
+            this.brBtnListarPessoas.Image = global::View.Properties.Resources.user_list;
             this.brBtnListarPessoas.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.brBtnListarPessoas.Name = "brBtnListarPessoas";
             this.brBtnListarPessoas.Size = new System.Drawing.Size(42, 44);
             this.brBtnListarPessoas.Text = "toolStripButton1";
             this.brBtnListarPessoas.Click += new System.EventHandler(this.brBtnListarPessoas_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::View.Properties.Resources.logo2_lasallerj;
+            this.pictureBox1.Location = new System.Drawing.Point(45, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1368, 593);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 527);
+            this.ClientSize = new System.Drawing.Size(1413, 649);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.barraTarefas);
             this.Controls.Add(this.barraStatus);
             this.Controls.Add(this.menuPrincipal);
             this.MainMenuStrip = this.menuPrincipal;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aplicação de Exemplo de Aula";

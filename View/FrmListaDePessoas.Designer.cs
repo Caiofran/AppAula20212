@@ -30,12 +30,12 @@ namespace View
         private void InitializeComponent()
         {
             this.dgvDados = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txbBusca = new System.Windows.Forms.TextBox();
-            this.btnFechar = new System.Windows.Forms.Button();
             this.colCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txbBusca = new System.Windows.Forms.TextBox();
+            this.btnFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@ namespace View
             this.colNome,
             this.colEmail});
             this.dgvDados.Location = new System.Drawing.Point(71, 87);
-            this.dgvDados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDados.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDados.MultiSelect = false;
             this.dgvDados.Name = "dgvDados";
             this.dgvDados.ReadOnly = true;
@@ -58,34 +58,6 @@ namespace View
             this.dgvDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDados.Size = new System.Drawing.Size(741, 564);
             this.dgvDados.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(143, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Busca:";
-            // 
-            // txbBusca
-            // 
-            this.txbBusca.Location = new System.Drawing.Point(211, 42);
-            this.txbBusca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txbBusca.Name = "txbBusca";
-            this.txbBusca.Size = new System.Drawing.Size(451, 22);
-            this.txbBusca.TabIndex = 2;
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.Location = new System.Drawing.Point(712, 674);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(100, 28);
-            this.btnFechar.TabIndex = 3;
-            this.btnFechar.Text = "Fechar";
-            this.btnFechar.UseVisualStyleBackColor = true;
             // 
             // colCPF
             // 
@@ -111,6 +83,35 @@ namespace View
             this.colEmail.ReadOnly = true;
             this.colEmail.Width = 250;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(143, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Busca:";
+            // 
+            // txbBusca
+            // 
+            this.txbBusca.Location = new System.Drawing.Point(211, 42);
+            this.txbBusca.Margin = new System.Windows.Forms.Padding(4);
+            this.txbBusca.Name = "txbBusca";
+            this.txbBusca.Size = new System.Drawing.Size(451, 22);
+            this.txbBusca.TabIndex = 2;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Location = new System.Drawing.Point(712, 674);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(100, 28);
+            this.btnFechar.TabIndex = 3;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
+            // 
             // FrmListaDePessoas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -121,7 +122,7 @@ namespace View
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDados);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmListaDePessoas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lista de Pessoas Cadastradas no Mapa (Dictionary)";
