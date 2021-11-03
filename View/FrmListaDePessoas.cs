@@ -72,10 +72,5 @@ namespace View
                 MessageBox.Show("ERRO AO DELETAR PESSOA: " + ex.Message);
             }
         }
-
-        private void btnFechar_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }
