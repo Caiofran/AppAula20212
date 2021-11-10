@@ -10,8 +10,8 @@ namespace DAO
 {
     public static class BD
     {
-        //Data Source=D:\Documentos\Faculdade 2021.2\Metodologia e Construção de Projetos de TI\Projetos\AppAula20212\bd.sdf;Password=123
-        private static String strConn = @"Data Source=D:\Documentos\Faculdade 2021.2\Metodologia e Construção de Projetos de TI\Projetos\AppAula20212\bd.sdf;Password=123";
+        //Data Source=C:\Users\User\source\repos\ctpi_20212\bd.sdf;Password=123
+        private static String strConn = @"Data Source=D:\Documentos\Faculdade 2021.2\Metodologia e Construção de Projetos de TI\Projetos\ctpi_20212\bd.sdf;Password=123";
         private static SqlCeConnection conexao;
 
         public static void AbrirConexao()
@@ -147,7 +147,7 @@ namespace DAO
                 throw new Exception("ERRO AO EXECUTAR INSERT COM PK: " + ex.Message);
             }
         }
-
+    
         public static Object SelectImagemBD(String _SQL)
         {
             try

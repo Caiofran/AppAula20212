@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F3FEC07C-4BFA-4C32-8833-FB6603B22B93}</ProjectGuid>
+    <ProjectGuid>{FA15B4B2-868B-4A3A-8084-D93BDE549643}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Control</RootNamespace>
@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">
-      <Project>{1cb4680e-6fd3-492c-87a7-48619883d4be}</Project>
+      <Project>{5b39c2e3-8554-42e0-a14f-9c75c9e3e578}</Project>
       <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">

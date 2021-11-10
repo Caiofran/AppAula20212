@@ -123,7 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Control\Control.csproj">
-      <Project>{f3fec07c-4bfa-4c32-8833-fb6603b22b93}</Project>
+      <Project>{fa15b4b2-868b-4a3a-8084-d93bde549643}</Project>
       <Name>Control</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
